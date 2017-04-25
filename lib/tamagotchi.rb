@@ -39,4 +39,8 @@ class Tamagotchi
     puts "it's dead." unless is_alive
     status
   end
+
+  def feed_it (number)
+    @food_level += number
+  end
 end

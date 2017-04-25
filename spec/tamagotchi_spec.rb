@@ -40,4 +40,12 @@ describe(Tamagotchi) do
     end
   end
 
+  describe '#feed_it' do
+    it 'will allow the user to feed the tamagotchi' do
+      paul = Tamagotchi.new('paul')
+      paul.feed_it(3)
+      expect(paul.food_level).to(eq(13))
+    end
+  end
+
 end

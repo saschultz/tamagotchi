@@ -56,4 +56,12 @@ describe(Tamagotchi) do
     end
   end
 
+  describe '#tuck_in' do
+    it 'will allow the user to put the tamagotchi to bed' do
+      paul = Tamagotchi.new('paul')
+      paul.tuck_in(3)
+      expect(paul.sleep_level).to(eq(13))
+    end
+  end
+
 end

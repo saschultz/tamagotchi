@@ -47,4 +47,8 @@ class Tamagotchi
   def play_with (number)
     @activity_level += number
   end
+
+  def tuck_in (number)
+    @sleep_level += number
+  end
 end

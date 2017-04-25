@@ -30,7 +30,13 @@ class Tamagotchi
     @food_level = number
   end
 
+  def status
+    "Food level: #{@food_level} Sleep level: #{@sleep_level} Activity level: #{@activity_level}"
+  end
+
   def time_passes
-    @food_level -= 1
+    @food_level -= 1 if is_alive
+    puts "it's dead." unless is_alive
+    status
   end
 end

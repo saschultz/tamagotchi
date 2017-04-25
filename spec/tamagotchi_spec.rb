@@ -33,4 +33,11 @@ describe(Tamagotchi) do
     end
   end
 
+  describe '#status' do
+    it "shows the tamagotchi's current food, sleep and activity levels" do
+      paul = Tamagotchi.new('paul')
+      expect(paul.status).to(eq("Food level: 10 Sleep level: 10 Activity level: 10"))
+    end
+  end
+
 end

@@ -43,4 +43,8 @@ class Tamagotchi
   def feed_it (number)
     @food_level += number
   end
+
+  def play_with (number)
+    @activity_level += number
+  end
 end

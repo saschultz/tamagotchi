@@ -48,4 +48,12 @@ describe(Tamagotchi) do
     end
   end
 
+  describe '#play_with' do
+    it 'will allow the user to play with the tamagotchi' do
+      paul = Tamagotchi.new('paul')
+      paul.play_with(3)
+      expect(paul.activity_level).to(eq(13))
+    end
+  end
+
 end

@@ -21,4 +21,16 @@ class Tamagotchi
   def activity_level
     @activity_level
   end
+
+  def is_alive
+    @food_level > 0 && @sleep_level > 0 && @activity_level > 0
+  end
+
+  def set_food_level (number)
+    @food_level = number
+  end
+
+  def time_passes
+    @food_level -= 1
+  end
 end
